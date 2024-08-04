@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="40" height="22" tilewidth="32" tileheight="32" infinite="0" nextlayerid="7" nextobjectid="38">
+ <tileset firstgid="1" name="descarga (1)" tilewidth="32" tileheight="32" tilecount="1008" columns="42">
+  <image source="../descarga (1).jpg" width="1372" height="768"/>
+ </tileset>
+ <tileset firstgid="1009" name="Captura" tilewidth="32" tileheight="32" tilecount="308" columns="28">
+  <image source="../Captura.JPG" width="916" height="355"/>
+ </tileset>
+ <tileset firstgid="1317" name="menu" tilewidth="32" tileheight="32" tilecount="858" columns="39">
+  <image source="../menu.png" width="1279" height="718"/>
+ </tileset>
+ <tileset firstgid="2175" name="images" tilewidth="32" tileheight="32" tilecount="36" columns="9">
+  <image source="../images.png" width="319" height="158"/>
+ </tileset>
+ <tileset firstgid="2211" name="New Piskel (1)" tilewidth="32" tileheight="32" tilecount="1" columns="1">
+  <image source="../New Piskel (1).png" width="32" height="32"/>
+ </tileset>
+ <tileset firstgid="2212" name="New Piskel (3)" tilewidth="32" tileheight="32" tilecount="4" columns="2">
+  <image source="../New Piskel (3).png" width="64" height="64"/>
+ </tileset>
+ <tileset firstgid="2216" name="New Piskel (4)" tilewidth="32" tileheight="32" tilecount="4" columns="2">
+  <image source="../New Piskel (4).png" width="64" height="64"/>
+ </tileset>
+ <tileset firstgid="2220" name="New Piskel (5)" tilewidth="32" tileheight="32" tilecount="6" columns="2">
+  <image source="../New Piskel (5).png" width="64" height="96"/>
+ </tileset>
+ <tileset firstgid="2226" name="New Piskel (6)" tilewidth="32" tileheight="32" tilecount="6" columns="2">
+  <image source="../New Piskel (6).png" width="64" height="96"/>
+ </tileset>
+ <layer id="3" name="Capa de patrones 2" width="40" height="22">
+  <data encoding="base64" compression="zstd">
+   KLUv/WDADJ0GAAIEDRbAJR3fzSBYjQW52NcBCBWoqiojASEFLdoz60zNsDQrmKWE0Sx07TzJ8BTsSWhePQ84fiNJoEBVMQeQghoSuckDHVBbiFtjVDcXsca2MkeQOmuybrTCkFCvoFd1tFPT3FdnLKyMQRrixyXYvjo9ss0elUeSw5M9kY+hj0u3ztFIuDbQjjujonip/90wKjyuwH1I7no1dsRD3bEhk2tgcQlr5FhvqJ8Evm7DWnD/eWjEjMg/4WX36Q4wXIs2QtWGxajklWQGZBM+NRH1oSNTmAQ=
+  </data>
+ </layer>
+ <objectgroup id="2" name="limites">
+  <object id="17" x="69.3333" y="36" width="1137.33" height="16"/>
+  <object id="20" x="72" y="40" width="13.3333" height="225.333"/>
+  <object id="22" x="73.3333" y="436.667" width="9.3333" height="214.666"/>
+  <object id="23" x="1192" y="440.667" width="10.6666" height="213.333"/>
+  <object id="24" x="1192" y="36.6668" width="13.3333" height="229.333"/>
+  <object id="25" x="71.335" y="646.667" width="1137.33" height="14.6667"/>
+ </objectgroup>
+ <objectgroup id="5" name="arco">
+  <object id="26" x="1190.67" y="265.333" width="77.3333" height="14.6667"/>
+  <object id="28" x="1258.67" y="281.333" width="10.6667" height="161.333"/>
+  <object id="30" x="1190.67" y="429.333" width="82.6667" height="12"/>
+  <object id="32" x="7.99998" y="260.667" width="77.3333" height="14.6667"/>
+  <object id="33" x="9.33332" y="272.667" width="10.6667" height="161.333"/>
+  <object id="34" x="7.99998" y="424.667" width="76" height="12"/>
+ </objectgroup>
+ <objectgroup id="6" name="limite gol">
+  <object id="35" x="1190.67" y="281.333" width="12" height="147"/>
+  <object id="37" x="72.4167" y="276.333" width="12" height="147.75"/>
+ </objectgroup>
+</map>
