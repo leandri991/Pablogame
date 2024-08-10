@@ -55,7 +55,6 @@ public class PantallaCarga implements Screen{
 		fondo.setTransparencia(a);
 		
 		if(termina) {
-			System.out.println("si");
 			contTiempoTermina+=0.1f;
 			if(contTiempoTermina>tiempoTermina) {
 				Render.app.setScreen(new Menu());

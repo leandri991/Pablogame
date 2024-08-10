@@ -7,7 +7,7 @@ import com.badlogic.gdx.Input.Keys;
 
 public class Entradas implements InputProcessor{
 
-    private boolean abajo = false, arriba = false, izquierda = false, derecha = false;
+    private boolean abajo = false, arriba = false, izquierda = false, derecha = false, w = false, a = false, s = false, d = false;
 	private int mouseX=0,mouseY=0;
 	private boolean click = false;
 	
@@ -22,6 +22,25 @@ public class Entradas implements InputProcessor{
 	public boolean isArriba() {
 		return arriba;
 	}
+	public boolean isIzquierda() {
+        return izquierda;
+    }
+
+    public boolean isDerecha() {
+        return derecha;
+    }
+    public boolean isW() {
+        return w;
+    }
+    public boolean isA() {
+        return a;
+    }
+    public boolean isS() {
+        return s;
+    }
+    public boolean isD() {
+        return d;
+    }
 	
 	
 	@Override
@@ -35,6 +54,15 @@ public class Entradas implements InputProcessor{
             izquierda = true;
         } else if (keycode == Keys.RIGHT) {
             derecha = true;
+        }
+        else if (keycode == Keys.W) {
+            w = true;
+        } else if (keycode == Keys.A) {
+            a = true;
+        } else if (keycode == Keys.S) {
+            s = true;
+        } else if (keycode == Keys.D) {
+            d = true;
         }
         if (keycode == Keys.ENTER) {
             enter = true;
@@ -54,6 +82,14 @@ public class Entradas implements InputProcessor{
             izquierda = false;
         } else if (keycode == Keys.RIGHT) {
             derecha = false;
+        }else if (keycode == Keys.W) {
+            w = false;
+        } else if (keycode == Keys.A) {
+            a = false;
+        } else if (keycode == Keys.S) {
+            s = false;
+        } else if (keycode == Keys.D) {
+            d = false;
         }
         if (keycode == Keys.ENTER) {
             enter = false;
@@ -114,11 +150,5 @@ public class Entradas implements InputProcessor{
 		return enter;
 	}
 	 
-	    public boolean isIzquierda() {
-	        return izquierda;
-	    }
-
-	    public boolean isDerecha() {
-	        return derecha;
-	    }
+	    
 }

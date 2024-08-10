@@ -41,7 +41,7 @@ public class Menu implements Screen{
 	   for(int i = 0; i < opciones.length; i++) {
 		   opciones[i] = new Texto(Recursos.FUENTEMENU, 60 , Color.WHITE, true);
 		   opciones[i].setTexto(textos[i]);
-		   opciones[i].setPosition(380, 300- (i * 50));
+		   opciones[i].setPosition(500, 300 - (i * 50));
 	   }
 		
 	}

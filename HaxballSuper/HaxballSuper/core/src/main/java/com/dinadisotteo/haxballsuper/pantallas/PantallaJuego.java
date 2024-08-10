@@ -33,7 +33,7 @@ public class PantallaJuego implements Screen{
     
    public  PantallaJuego(){
     	batch = new SpriteBatch();
-    	player = new Jugador(200,200,100,100);
+    	player = new Jugador(200,200,36,36);
         world = new World(new Vector2(0, 0), true);
     	
     }
@@ -42,7 +42,7 @@ public class PantallaJuego implements Screen{
 	public void show() {
 		batch = Render.batch;
 
-        map = new TmxMapLoader().load("mapas/cancha1.tmx");
+        map = new TmxMapLoader().load("mapas/cancha.tmx");
 
 
         mapRenderer = new OrthogonalTiledMapRenderer(map);
@@ -53,7 +53,7 @@ public class PantallaJuego implements Screen{
         camera = new OrthographicCamera();
         viewport = new FitViewport(Config.ANCHO, Config.ALTO, camera);
         camera.position.set(Config.ANCHO/ 2f, Config.ALTO / 2f, 0);
-        pelota = new Pelota(world, 640, 360, 10);
+        pelota = new Pelota(world, (Config.ANCHO/2), (Config.ALTO/2), 4);
 	}
 
 	@Override
@@ -75,17 +75,17 @@ public class PantallaJuego implements Screen{
        // float deltaX = 100, deltaY = 100;
        
 
-        if(entradas.isIzquierda()) {
-        	player.setX(player.getX() - 5);
+        if(entradas.isIzquierda()||entradas.isA()) {
+        	player.setX(player.getX() - 3);
         }
-        if(entradas.isDerecha()) {
-        	player.setX(player.getX() + 5);
+        if(entradas.isDerecha()||entradas.isD()) {
+        	player.setX(player.getX() + 3);
         }
-        if(entradas.isArriba()) {
-        	player.setY(player.getY() + 5);
+        if(entradas.isArriba()||entradas.isW()) {
+        	player.setY(player.getY() + 3);
         }
-        if(entradas.isAbajo()) {
-        	player.setY(player.getY() - 5);
+        if(entradas.isAbajo()||entradas.isS()) {
+        	player.setY(player.getY() - 3);
         }
         
 	}
